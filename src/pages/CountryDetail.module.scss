@@ -1,0 +1,104 @@
+.detailContainer {
+  min-height: 120vh;
+  background-color: rgb(250, 250, 250);
+  .imgcoverContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    .img2 {
+      width: 100%;
+      height: 60rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // filter: blur(2px);
+      }
+    }
+  }
+  h3 {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Merriweather", sans-serif;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    bottom: 4rem;
+  }
+  .infosCountry {
+    min-height: 100rem;
+    .description {
+      width: 70%;
+      text-align: center;
+      p {
+        box-shadow: 1px 1px 1px rgb(226, 226, 226);
+        background-color: white;
+        border-radius: 1rem;
+        font-family: "poppins", sans-serif;
+      }
+    }
+    .infos {
+      width: 60%;
+      background-color: white;
+      box-shadow: 1px 1px 1px rgb(226, 226, 226);
+      border-radius: 1rem;
+      p {
+        font-family: "poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .somContainer {
+      h2 {
+        text-align: center;
+        font-family: "Cabin", sans-serif;
+        font-size: 3rem;
+      }
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        li {
+          margin: 1rem 0;
+          h5 {
+            font-size: 2.5rem;
+            margin-right: 2rem;
+            padding: 0.8rem 2rem;
+          }
+          .imgIcone {
+            overflow: hidden;
+            width: 9rem;
+            height: 7rem;
+            img {
+              border-top-left-radius: 1rem;
+              border-bottom-left-radius: 1rem;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          p {
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            font-family: "poppins", sans-serif;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            font-size: 1.5rem;
+            padding: 0rem 2rem;
+            &:hover {
+              cursor: pointer;
+              color: rgb(98, 98, 221);
+            }
+          }
+        }
+      }
+    }
+  }
+}

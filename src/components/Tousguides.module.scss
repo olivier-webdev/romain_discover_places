@@ -1,0 +1,80 @@
+.complete {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+}
+
+.guidesContainer {
+    .presGuides {
+        width: 100%;
+        height: 18rem;
+        position: relative;
+        background-color: rgb(250, 250, 250);
+        // background: url(https://media.istockphoto.com/id/1150481340/fr/vectoriel/paysage-de-montagnes-r%C3%A9alistes-panorama-de-bois-du-matin-des-pins-et-des-silhouettes-de.jpg?s=170667a&w=0&k=20&c=gHiCUB9PWAkOx2rhm1anZ1bl2juHedlf7Ql8H9P3wKk=) no-repeat 50% 50%;
+        background: url(https://t3.ftcdn.net/jpg/03/18/13/92/360_F_318139202_s4F1cp8hP5U3YpZmHLjozJHTebmj5Pbo.jpg) no-repeat 50% 50%;
+        opacity: 0.7;
+        background-size: cover;
+        a {
+            position: absolute;
+            right: 3rem;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            color: black;
+            font-family: 'poppins', sans-serif;
+            font-size: 1.4rem;
+        }
+        h4 {
+            position: absolute;
+            left: 15rem;
+            bottom: 2rem;
+            font-size: 3rem;
+            font-family: 'Merriweather', sans-serif;
+            font-weight: normal;
+        }
+    }
+    .guides {
+        min-height: 20rem;
+        width: 100%;
+        position: relative;
+        h5 {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            font-family: "Merriweather";
+            font-size: 1.6rem;
+        }
+        span {
+            width: 100%;
+            height: 2px;
+            background-color: rgb(235, 235, 235);  
+            position: absolute;
+            // left: 10rem;
+        }
+        .pays {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            position: relative;
+            .img1 {
+                overflow: hidden;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 0.7rem;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            p {
+                position: absolute;
+                font-family: 'poppins', sans-serif;
+                font-size: 1.6rem;
+                font-weight: 500;
+                top: 12rem;
+            }
+        }
+    }
+}

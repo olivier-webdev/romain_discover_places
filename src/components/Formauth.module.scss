@@ -1,0 +1,130 @@
+.logContainer {
+  min-height: 130vh;
+  .formregister {
+    border-radius: 2rem;
+    margin-top: 14rem;
+    padding-top: 3rem;
+    width: 400px;
+    height: 500px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.329);
+    position: relative;
+
+    span {
+      font-size: 1.1rem;
+      color: rgb(214, 5, 5);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+  .formlogin {
+    border-radius: 2rem;
+    margin-top: 18rem;
+    width: 400px;
+    height: 280px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.329);
+    position: relative;
+  }
+  .entree {
+    height: 7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    input {
+      width: 30rem;
+      padding-left: 1.5rem;
+      margin-top: 1.5rem;
+      border: 2px solid #999;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      height: 3.6rem;
+      transition: border-color 0.3s ease;
+    }
+    input::placeholder {
+      // text-align: center;
+      color: #909090;
+      font-family: "poppins", sans-serif;
+      font-size: 1.3rem;
+    }
+    input:focus {
+      outline: none;
+      // border-color: #db6c1c;
+      border-color: #1abc9c;
+      font-family: "poppins", sans-serif;
+      color: #2c3e50;
+    }
+  }
+  a {
+    color: #06769f;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    font-size: 1.5rem;
+    padding: 0 0.25rem;
+    margin: 0 -0.25rem;
+    font-family: "roboto", sans-serif;
+    &:hover {
+      color: #151515;
+      text-decoration: underline;
+    }
+  }
+  button {
+    width: 168px;
+    height: 40px;
+    background-color: #CCD9E2;
+    box-shadow: inset 0 0 0 0 #CCD9E2;
+    color: rgb(15, 15, 15);
+    border: none;
+    font-size: 1.7rem;
+    font-family: "poppins", sans-serif;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+  }
+  button:hover {
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 200px 0 0 0 #80a2ba;
+  }
+
+  .iconeglobe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    position: absolute;
+    top: -3rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: #CCD9E2;
+    color: white;
+    border-radius: 50% 50%;
+  }
+    
+
+  // .error input {
+  //     color: red;
+  //     border: 1px solid rgba(255, 0, 0, 0.527);
+  //   }
+  //   .error span {
+  //     visibility: visible;
+  //     opacity: 1;
+  //     color: red;
+  //   }
+  .progressRed {
+    background: red;
+    width: 33%;
+    visibility: visible;
+  }
+  .progressBlue {
+    background: #16d9e7;
+    width: 67%;
+    visibility: visible;
+  }
+  .progressGreen {
+    width: 100%;
+    background: #5ef9a4;
+    visibility: visible;
+  }
+}
